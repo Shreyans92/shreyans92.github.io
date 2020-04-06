@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Shreyans Dhankhar
+#title: About Shreyans Dhankhar
 meta-title: About me
 subtitle: "Knowledge Shared is Power Multiplied."
 ---
@@ -9,7 +9,7 @@ subtitle: "Knowledge Shared is Power Multiplied."
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi again, my name is <strong>Shreyans Dhankhar</strong>, I am a data scientist, currently working at HP R&D working on some awesome Machine Learning/Deep Learning problems with some amazing folks at Bangalore.
+  Hi, my name is <strong>Shreyans Dhankhar</strong>, I am a data scientist, currently working at HP R&D working on some awesome Machine Learning/Deep Learning problems with some amazing folks at Bangalore.
 </p>
 
 <p class="about-text">
