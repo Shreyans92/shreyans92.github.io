@@ -6,18 +6,14 @@ title: All Things AI - Machine Learning | Deep Learning | NLP | Data Science
 #description: A DevOps & DevSecOps Practitioner | Cloud Architect | Multi-Platform Developer
 navbar-links:
   About Me: aboutme
-  #What I am doing Now: now
-  #Visualize My Experience:
-  #  - Skills By Tech: infographic
-  #  - Areas of Expertise: areasexpertise
-  # - My Resume: resume
+  Resume | CV: "resume/Shreyans_resume.pdf"
 avatar: "/img/shreyan-git.jpg"
 # --- Background colour/image options --- #
 
 # By default, the navigation bar and footer have a light gray background, and the main page
 # has a white background. You can specify a different background colour or a background image
 # for the navigation bar, the main page, and the footer.
-navbar-col: "green"
+navbar-col: "#008000"
 # navbar-img: "/img/bgimage.png"
 # footer-col: "blue"
 # footer-img: "/img/bgimage.png"
