@@ -1,27 +1,27 @@
 ---
 
-url: http://sharepointoscar.github.io
+url: http://Shreyans92.github.io
 baseurl: ''
-title: All Things DevOps - AWS | GCP | Azure | Kubernetes | Jenkins X | Linux
-description: A DevOps & DevSecOps Practitioner | Cloud Architect | Multi-Platform Developer
+title: All Things AI - Machine Learning | Deep Learning | NLP | Data Science 
+#description: A DevOps & DevSecOps Practitioner | Cloud Architect | Multi-Platform Developer
 navbar-links:
   About Me: aboutme
-  What I am doing Now: now
-  Visualize My Experience:
-    - Skills By Tech: infographic
-    - Areas of Expertise: areasexpertise
-    - My Resume: resume
-avatar: "/img/sharepointoscar.jpg"
+  #What I am doing Now: now
+  #Visualize My Experience:
+  #  - Skills By Tech: infographic
+  #  - Areas of Expertise: areasexpertise
+  # - My Resume: resume
+avatar: "/img/shreyans-git.jpg"
 
 author:
-  name: Oscar Medina
+  name: Shreyans Dhankhar
   email: youremail@domain.com
   facebook: yourname
-  github: SharePointOscar
+  github: Shreyans92
   twitter: SharePointOscar
   reddit: yourname
   google-plus: "+yourname"
-  linkedin: oscarmedina
+  linkedin: in/shreyans-dhankhar-501b88118/
   xing: yourname
   stackoverflow: yourlink
   snapchat: yourname
@@ -34,7 +34,7 @@ footer-links-active:
   rss: false
   facebook: false
   email: false
-  twitter: true
+  twitter: false
   google-plus: false
   github: true
   reddit: false
@@ -47,7 +47,7 @@ footer-links-active:
   spotify: false
   telephone: false
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: false
   google: false
   linkedin: true
@@ -55,10 +55,10 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "sharepointoscar"
+#disqus: "sharepointoscar"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-27950608-1"
+#google_analytics: "UA-27950608-1"
 
 
 excerpt_length: 50
