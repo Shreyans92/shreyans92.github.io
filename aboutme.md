@@ -1,6 +1,6 @@
 ---
 layout: page
-#title: About Shreyans Dhankhar
+title: About Shreyans 
 meta-title: About me
 subtitle: "Knowledge Shared is Power Multiplied."
 ---
