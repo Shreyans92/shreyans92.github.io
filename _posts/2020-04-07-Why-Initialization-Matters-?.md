@@ -4,7 +4,7 @@ title: Should you Randomly Initialize?
 subtitle: Journey from basics to advanced
 
 image: '/img/weight-init.jpg'
-share-img: '/img/weight-init.jpg'
+
 published: true
 author: Shreyans Dhankhar
 date: 2020-04-07
