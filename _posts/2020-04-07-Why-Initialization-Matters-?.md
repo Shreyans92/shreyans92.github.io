@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Initialization Matter's in Deep Learning?
+title: Should you Randomly Initialize?
 subtitle: Journey from basics to advanced
 
 image: '/img/weight-init.jpg'
@@ -15,4 +15,5 @@ tags:
   - xavier
   - kaming
 ---
-# Stay Tuned Coming Soon. 
+
+Hello World,today we will talk about the initialization.
