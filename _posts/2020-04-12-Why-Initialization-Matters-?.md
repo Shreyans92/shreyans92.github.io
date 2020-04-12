@@ -5,7 +5,7 @@ subtitle: Journey from basics to advanced
 
 image: '/img/weight-init.jpg'
 share-img: '/img/weight-init.jpg'
-published: true
+published: false
 author: Shreyans Dhankhar
 date: 2020-04-07
 tags:
