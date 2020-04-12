@@ -25,11 +25,12 @@ Unlike some already available tutorials or blogs, we will not talk about why you
 > Note: This post assumes readers to have basic familiarity with eigenvalues and eigenvectors.
 
 *Basic Notations* :
-- A: a random matrix whose entries are standard gaussian distributed of dimension (d,d).
-- x: a random gaussian vector of dimension (d,1).
+- A: a random matrix whose entries are standard gaussian distributed of dimension (k,k).
+- x: a random gaussian vector of dimension (k,1).
 
 We can think of a neural network as a stack of many layers where each layer does a linear transformation followed by a non-linear operation using a function commonly known as *activation function*. To keep this post simple and easily understandable, I will focus only on the linear transformation part.
 
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as:
 ![formula](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7Bx%7D_%7Bout%7D%20%3D%20%5Cmathbf%7BA%7D%5Ccdot%20%5Cmathbf%7BA%7D%5Ccdots%20%5Cmathbf%7BA%7D%20%5Cmathbf%7Bx%7D%20%3D%20%5Cmathbf%7BA%7D%5EN%20%5Cmathbf%7Bx%7D)
-*where x is the input and x<sub>out</sub> is the output*.
+*where x is the input and x<sub>out</sub> is the output*. Let's initialize our matrix A and see the output. 
+![Matrix Initialized](/img/pots1/mat1.JPG)
