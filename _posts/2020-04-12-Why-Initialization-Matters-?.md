@@ -28,4 +28,5 @@ Unlike some already available tutorials or blogs, we will not talk about why you
 *Basic Notations* :
 - A: a random matrix whose entries are standard gaussian distributed of dimension (d,d).
 - x: a random gaussian vector of dimension (d,1).
+
 We can think of a neural network as a stack of many layers where each layer does a linear transformation followed by a non-linear operation using a function commonly known as *activation function*. To keep this post simple and easily understandable, I will focus only on the linear transformation part.
