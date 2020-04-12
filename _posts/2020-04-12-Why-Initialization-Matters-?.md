@@ -33,3 +33,4 @@ We can think of a neural network as a stack of many layers where each layer does
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as:
 
 ![formula](https://render.githubusercontent.com/render/math?math=%5Cmathbf%7Bx%7D_%7Bout%7D%20%3D%20%5Cmathbf%7BA%7D%5Ccdot%20%5Cmathbf%7BA%7D%5Ccdots%20%5Cmathbf%7BA%7D%20%5Cmathbf%7Bx%7D%20%3D%20%5Cmathbf%7BA%7D%5EN%20%5Cmathbf%7Bx%7D.)
+*where x is the input and {x}_{out} is the output*.
