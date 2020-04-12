@@ -23,4 +23,6 @@ Unlike some already available tutorials or blogs, we will not talk about why you
 
 ### Note: This post assumes readers to have basic familiarity with eigenvalues and eigenvectors. 
 
-Let's assume we have a matrix A  
+$$
+\mathbf{v}_{out} = \mathbf{A}\cdot \mathbf{A}\cdots \mathbf{A} \mathbf{v}_{in} = \mathbf{A}^N \mathbf{v}_{in}.
+$$
