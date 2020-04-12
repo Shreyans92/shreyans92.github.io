@@ -24,6 +24,7 @@ tags:
 Unlike some already available tutorials or blogs, we will not talk about why you should not initialize your weights with *all zeros or all ones* rather I will give a different perspective to weight initialization using eigenvalues and eigenvectors.
 
 #### Note: This post assumes readers to have basic familiarity with eigenvalues and eigenvectors. 
-*Basic Notations* : 
-        a) A: a random matrix whose entries are standard gaussian distributed of dimension (dxd).
-        b) x: a random gaussian vectorof dimension d.
+*Basic Notations* :
+
+ a) A: a random matrix whose entries are standard gaussian distributed of dimension (dxd).
+ b) x: a random gaussian vector of dimension d.
