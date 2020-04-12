@@ -33,6 +33,10 @@ We can think of a neural network as a stack of many layers where each layer does
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as:
 
 ![eqn](/img/pots1/eqn.JPG)
-Let's initialize our matrix A and see the output,also check for mean and std of A. 
+To start with we will take the value of k as 5 and randomly initializae the matrix A with standard gaussian. 
 
 ![Matrix Initialized](/img/pots1/mat1.JPG)
+
+Let us now analyze the repeated multiplication by plotting the norm and the quotients of the norm.
+
+![Matrix Initialized](/img/pots1/norm-quot.png)
