@@ -32,6 +32,6 @@ We can think of a neural network as a stack of many layers where each layer does
 
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as: 
 
-$$
+
 \mathbf{x}_{out} = \mathbf{A}\cdot \mathbf{A}\cdots \mathbf{A} \mathbf{x} = \mathbf{A}^N \mathbf{x}.
-$$ 
+ 
