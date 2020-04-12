@@ -33,6 +33,6 @@ We can think of a neural network as a stack of many layers where each layer does
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as:
 
 ![eqn](/img/pots1/eqn.JPG)
-*where x is the input and x<sub>out</sub> is the output*. Let's initialize our matrix A and see the output. 
+Let's initialize our matrix A and see the output,also check for mean and std of A. 
 
 ![Matrix Initialized](/img/pots1/mat1.JPG)
