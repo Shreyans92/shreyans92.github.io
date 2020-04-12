@@ -25,6 +25,5 @@ Unlike some already available tutorials or blogs, we will not talk about why you
 
 #### Note: This post assumes readers to have basic familiarity with eigenvalues and eigenvectors. 
 *Basic Notations* :
-
- a) A: a random matrix whose entries are standard gaussian distributed of dimension (dxd).
- b) x: a random gaussian vector of dimension d.
+- A: a random matrix whose entries are standard gaussian distributed of dimension (dxd).
+- x: a random gaussian vector of dimension d.
