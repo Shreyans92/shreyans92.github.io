@@ -17,8 +17,7 @@ tags:
   - eigenvalue
   - eigenvector
 ---
-
-# Overview 
+ 
 
 *Weight Initialization* is the most underrated concept in the deep learning terminology. I have seen many newbie deep learning practitioners and even some experienced ones ignoring this important concept.
 Unlike some already available tutorials or blogs, we will not talk about why you should not initialize your weights with *all zeros or all ones* rather I will give a different perspective to weight initialization using eigenvalues and eigenvectors.
@@ -30,3 +29,9 @@ Unlike some already available tutorials or blogs, we will not talk about why you
 - x: a random gaussian vector of dimension (d,1).
 
 We can think of a neural network as a stack of many layers where each layer does a linear transformation followed by a non-linear operation using a function commonly known as *activation function*. To keep this post simple and easily understandable, I will focus only on the linear transformation part.
+
+The linear transformation part in our case is basically a repeated matrix operation A which can be written as: 
+
+$$
+\mathbf{x}_{out} = \mathbf{A}\cdot \mathbf{A}\cdots \mathbf{A} \mathbf{x} = \mathbf{A}^N \mathbf{x}.
+$$ 
