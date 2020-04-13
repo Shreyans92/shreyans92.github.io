@@ -24,7 +24,7 @@ author:
   email: youremail@domain.com
   facebook: yourname
   github: Shreyans92
-  twitter: SharePointOscar
+  twitter: yourname
   reddit: yourname
   google-plus: "+yourname"
   linkedin: shreyans-dhankhar-501b88118/
@@ -61,7 +61,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "shreyansdhankhar"
+disqus: "https-shreyans92-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: "UA-27950608-1"
