@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Weight Initialization and Eigen Vectors
-subtitle: Journey from basics to advanced
+title: Weight Initialization: The First Principle
+subtitle: An EigenVector view 
 
 image: '/img/weight-init.jpg'
 share-img: '/img/weight-init.jpg'
 published: true
 author: Shreyans Dhankhar
-date: 2020-04-07
+date: 2020-04-13
 tags:
   - weight
   - initialization
@@ -50,11 +50,22 @@ Let's see the eigenvalues of the our matrix A
 ![Eigenvalues](/img/pots1/eigval.JPG) 
 The largest eigenvalue is approximately equal to our stretching factor, is this an error or just a coincidence! Well it is not.
 
-## *Microscopic view* 
-Our random vector *x* points in every direction so in particular it also points in the direction of principal eigenvector. When the matrix A is applied, this vectors stretches in every direction including the principal eigenvector direction. The repeated application of A will make this random vector aligned to the principal eigenvector until our random vector gets transformed into principal eigen vector. This is known as the *Power Iteration* method of finding largest eigenvalue and eigenvector. 
+## Microscopic view
+Our random vector *x* points in every direction so in particular, it also points in the direction of the principal eigenvector. When the matrix A is applied, this vectors stretches in every direction including the principal eigenvector direction. The repeated application of A will make this random vector aligned to the principal eigenvector until our random vector gets transformed into the principal eigenvector. This is known as the *Power Iteration* method of finding the largest eigenvalue and eigenvector. 
 
-But how this solve the our problem of the values exploding? Well, let us see what happens if we normalize the matrix A with the largest eigenvalue and plot the norm and quotients again. 
+But how this solve our problem of the values exploding? Well, let us see what happens if we normalize the matrix A with the largest eigenvalue and plot the norm and quotients again. 
 
 ![Normalized](/img/pots1/norm-quot1.png) 
 
+After normalization, the problem of exploding is rectified and gradually stabilizes at a specific value. This eigenvalue concept of a random matrix is of great importance in proper weight initialization of deep networks.
 
+## Summary 
+In this post, we have seen that eigenvalue and eigenvector play a crucial role in the initialization of a matrix. This concept is directly applicable to the proper weight initialization of neural networks. In the next post, we will see about Kaiming and Xavier's initializations.
+
+### References: 
+- https://d2l.ai/ 
+- Van Loan, C. F., & Golub, G. H. (1983). Matrix computations. Johns Hopkins University Press. 
+- I am sure I would have borrowed ideas from other sources as well and I apologize if I missed acknowledging them.
+
+Cheers,
+Shreyans :) 
