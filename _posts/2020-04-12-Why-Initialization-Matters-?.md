@@ -5,7 +5,7 @@ subtitle: Journey from basics to advanced
 
 image: '/img/weight-init.jpg'
 share-img: '/img/weight-init.jpg'
-published: false
+published: true
 author: Shreyans Dhankhar
 date: 2020-04-07
 tags:
@@ -40,3 +40,7 @@ To start with we will take the value of k as 5 and randomly initializae the matr
 Let us now analyze the repeated multiplication by plotting the norm and the quotients of the norm.
 
 ![Matrix Initialized](/img/pots1/norm-quot.png)
+
+From the graphs we can easily observe that the norm of the matrix is exploding but the quotient is getting saturated after some iterations to a specific value which let's call as streching factor of our matrix. If you recall in linear algebra there is a very important concept of  eigenvalues and eigenvectors. 
+
+> From wikipedia: an eigenvector or characteristic vector of a linear transformation is a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding eigenvalue is the factor by which the eigenvector is scaled. 
