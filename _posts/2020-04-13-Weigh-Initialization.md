@@ -43,7 +43,7 @@ Let us now analyze the repeated multiplication and plot the norm.
 ![Norm](/img/pots1/norm_code.JPG) 
 ![Norm](/img/pots1/norm.JPG) 
 
-From the graph, we can easily observe that the norm of the matrix is exploding.Let's check the norm ratio and see. 
+From the graph, we can easily observe that the norm of the matrix is exploding. Let's check the consecutive norm ratio a.k.a quotient and see. 
 ![Quot](/img/pots1/norm_quotient_code.JPG)
 
 The quotient is getting saturated after some iterations to a specific value approximately *2.60...* which let's call as *stretching factor of our matrix*. If you recall in linear algebra there is a very important concept of eigenvalues and eigenvectors. 
@@ -57,9 +57,11 @@ The largest eigenvalue is approximately equal to our stretching factor, is this 
 ## Microscopic view
 Our random vector *x* points in every direction so in particular, it also points in the direction of the principal eigenvector. When the matrix A is applied, this vectors stretches in every direction including the principal eigenvector direction. The repeated application of A will make this random vector aligned to the principal eigenvector until our random vector gets transformed into the principal eigenvector. This is known as the *Power Iteration* method of finding the largest eigenvalue and eigenvector. 
 
-But how this solve our problem of the values exploding? Well, let us see what happens if we normalize the matrix A with the largest eigenvalue and plot the norm and quotients again. 
+But how this solve our problem of the values exploding? Well, let us see what happens if we normalize the matrix A with the largest eigenvalue and plot the norm again. 
 
-![Normalized](/img/pots1/norm-quot1.png) 
+![Normalized](/img/pots1/normalised-norm-code.JPG)  
+Similarly let's plot the norm ratio again. 
+![Normalized](/img/pots1/normalised-norm-quot-code.JPG)
 
 After normalization, the problem of exploding is rectified and gradually stabilizes at a specific value. This eigenvalue concept of a random matrix is of great importance in proper weight initialization of deep networks.
 
