@@ -68,5 +68,4 @@ In this post, we have seen that eigenvalue and eigenvector play a crucial role i
 - I am sure I would have borrowed ideas from other sources as well and I apologize if I missed acknowledging them.
 
 Cheers, 
-
 Shreyans 
