@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weight Initialization: The First Principle
+title: Weight Initialization - The First Principle
 subtitle: An EigenVector view 
 
 image: '/img/weight-init.jpg'
