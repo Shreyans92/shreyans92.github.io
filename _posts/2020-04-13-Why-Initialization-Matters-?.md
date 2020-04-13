@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Weight Initialization - The First Principle
-subtitle: An EigenVector view 
+subtitle: Journey from basics to advanced.
 
 image: '/img/weight-init.jpg'
 share-img: '/img/weight-init.jpg'
@@ -63,9 +63,9 @@ After normalization, the problem of exploding is rectified and gradually stabili
 In this post, we have seen that eigenvalue and eigenvector play a crucial role in the initialization of a matrix. This concept is directly applicable to the proper weight initialization of neural networks. In the next post, we will see about Kaiming and Xavier's initializations.
 
 ### References: 
-- [https://www.d2l.ai]:https://www.d2l.ai
+- [https://www.d2l.ai](https://www.d2l.ai)
 - Van Loan, C. F., & Golub, G. H. (1983). Matrix computations. Johns Hopkins University Press. 
 - I am sure I would have borrowed ideas from other sources as well and I apologize if I missed acknowledging them.
 
-Cheers,
+Cheers, 
 Shreyans 
