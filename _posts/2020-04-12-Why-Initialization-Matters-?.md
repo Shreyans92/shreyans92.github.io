@@ -34,7 +34,7 @@ The linear transformation part in our case is basically a repeated matrix operat
 
 ![eqn](/img/pots1/eqn.JPG) 
 
-To start with we will take the value of k as 5 and randomly initializae the matrix A with standard gaussian. 
+To start with we will take the value of k as 5 and randomly initialize the matrix A with standard Gaussian. 
 
 ![Matrix Initialized](/img/pots1/mat1.JPG)
 
@@ -48,3 +48,13 @@ From the graphs, we can easily observe that the norm of the matrix is exploding 
 
 Let's see the eigenvalues of the our matrix A 
 ![Eigenvalues](/img/pots1/eigval.JPG) 
+The largest eigenvalue is approximately equal to our stretching factor, is this an error or just a coincidence! Well it is not.
+
+## *Microscopic view* 
+Our random vector *x* points in every direction so in particular it also points in the direction of principal eigenvector. When the matrix A is applied, this vectors stretches in every direction including the principal eigenvector direction. The repeated application of A will make this random vector aligned to the principal eigenvector until our random vector gets transformed into principal eigen vector. This is known as the *Power Iteration* method of finding largest eigenvalue and eigenvector. 
+
+But how this solve the our problem of the values exploding? Well, let us see what happens if we normalize the matrix A with the largest eigenvalue and plot the norm and quotients again. 
+
+![Normalized](/img/pots1/norm-quot1.png) 
+
+
