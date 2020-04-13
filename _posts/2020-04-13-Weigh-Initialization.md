@@ -38,11 +38,15 @@ To start with we will take the value of k as 5 and randomly initialize the matri
 
 ![Matrix Initialized](/img/pots1/mat1.JPG)
 
-Let us now analyze the repeated multiplication by plotting the norm and the quotients of the norm.
+Let us now analyze the repeated multiplication and plot the norm.
 
-![Matrix Initialized](/img/pots1/norm-quot.png)
+![Norm](/img/pots1/norm_code.JPG) 
+![Norm](/img/pots1/norm.JPG) 
 
-From the graphs, we can easily observe that the norm of the matrix is exploding but the quotient is getting saturated after some iterations to a specific value approximately *2.60...* which let's call as stretching factor of our matrix. If you recall in linear algebra there is a very important concept of eigenvalues and eigenvectors. 
+From the graph, we can easily observe that the norm of the matrix is exploding.Let's check the norm ratio and see. 
+![Quot](/img/pots1/norm_quotient_code.JPG)
+
+The quotient is getting saturated after some iterations to a specific value approximately *2.60...* which let's call as *stretching factor of our matrix*. If you recall in linear algebra there is a very important concept of eigenvalues and eigenvectors. 
 
 > From wikipedia: an eigenvector or characteristic vector of a linear transformation is a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding eigenvalue is the factor by which the eigenvector is scaled. 
 
