@@ -32,7 +32,8 @@ We can think of a neural network as a stack of many layers where each layer does
 
 The linear transformation part in our case is basically a repeated matrix operation A which can be written as:
 
-![eqn](/img/pots1/eqn.JPG)
+![eqn](/img/pots1/eqn.JPG) 
+
 To start with we will take the value of k as 5 and randomly initializae the matrix A with standard gaussian. 
 
 ![Matrix Initialized](/img/pots1/mat1.JPG)
@@ -41,6 +42,9 @@ Let us now analyze the repeated multiplication by plotting the norm and the quot
 
 ![Matrix Initialized](/img/pots1/norm-quot.png)
 
-From the graphs we can easily observe that the norm of the matrix is exploding but the quotient is getting saturated after some iterations to a specific value which let's call as streching factor of our matrix. If you recall in linear algebra there is a very important concept of  eigenvalues and eigenvectors. 
+From the graphs, we can easily observe that the norm of the matrix is exploding but the quotient is getting saturated after some iterations to a specific value approximately *2.60...* which let's call as stretching factor of our matrix. If you recall in linear algebra there is a very important concept of eigenvalues and eigenvectors. 
 
 > From wikipedia: an eigenvector or characteristic vector of a linear transformation is a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding eigenvalue is the factor by which the eigenvector is scaled. 
+
+Let's see the eigenvalues of the our matrix A 
+![Eigenvalues](/img/pots1/eigval.JPG) 
