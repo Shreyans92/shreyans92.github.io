@@ -9,7 +9,7 @@ subtitle: "Knowledge Shared is Power Multiplied."
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, my name is <strong>Shreyans Dhankhar</strong>, I am a data scientist, currently working at HP R&D working on some awesome Machine Learning/Deep Learning problems with some amazing folks at Bangalore.
+  Hi, my name is <strong>Shreyans Dhankhar</strong>, I work as an Applied Research Scientist, at Thomson Reuters Labs working on some awesome Machine Learning/Deep Learning problems with some amazing folks at Bangalore.
 </p>
 
 <p class="about-text">
