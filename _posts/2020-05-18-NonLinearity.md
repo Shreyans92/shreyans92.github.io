@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Train Big, Plan Smart: How to Calculate Memory and Estimate GPUs for LLMs
-subtitle: A Comprehensive Guide to Memory Calculation and GPU Estimation for Optimizing LLM Training. 
+title: Train Big, Plan Smart - How to Calculate Memory and Estimate GPUs for LLMs
+subtitle: A Comprehensive Guide to Memory Calculation and GPU Estimation for Optimizing LLM Training.
 
 image: '/img/llm_training.png'
 share-img: '/img/llm_training.png'
@@ -15,3 +15,5 @@ tags:
  
 
 Test Post
+
+
