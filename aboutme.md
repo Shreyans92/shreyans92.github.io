@@ -9,17 +9,15 @@ subtitle: "Knowledge Shared is Power Multiplied."
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi, my name is <strong>Shreyans Dhankhar</strong>, I work as an Applied Research Scientist, at Thomson Reuters Labs working on some awesome Machine Learning/Deep Learning problems with some amazing folks at Bangalore. Recently exploring LLM's landscape.
+  Hey there! I'm <strong>Shreyans Dhankhar</strong>, a Senior Solution Architect at Nvidia, specializing in Generative AI. I’ve spent over a decade in Applied Research, focusing on Natural Language Processing and Deep Learning. I earned my Master’s from IISc Bangalore, where I built a strong foundation in cutting-edge AI technologies.
+
+  At Nvidia, my current role involves designing and implementing advanced AI solutions using generative models to tackle real-world challenges across industries. I work closely with teams to translate complex research into practical applications, helping organizations unlock the full potential of AI. I’m passionate about innovation and love being at the forefront of this fast-moving field.
+
 </p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
 I obtained my <strong>Master of Engineering</strong> degree in Computer Science & Engineering from Indian Institute of Science in Bengaluru, India. My thesis was focused on <strong> Question Answering Systems using Dynamic Memory Networks</strong>.
-</p>
-
-<p class="about-text">
-<span class="fa fa-code about-icon"></span>
-I am an avid data science competition participant and currently hold the tittle of <strong> Kaggle Competition Expert </strong> .
 </p>
 
 <p class="about-text">
