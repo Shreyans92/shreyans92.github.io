@@ -5,7 +5,7 @@ subtitle: Unlocking the Basics
 
 image: '/img/llm_training.png'
 share-img: '/img/llm_training.png'
-published: true
+published: false
 author: Shreyans Dhankhar
 date: 2025-05-06
 tags:
