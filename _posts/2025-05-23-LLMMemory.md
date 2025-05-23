@@ -125,6 +125,7 @@ Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion toke
   Days = (2.92 × 10⁸ seconds)/(24 × 60 × 60) = 3,379 days.
 
 - **Estimated training time with 100 H100 GPUs**, assuming 20% overhead is 41 days.
+  
 ---
 
 ### Conclusion
