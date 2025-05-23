@@ -16,8 +16,6 @@ tags:
   - Model Scaling
 ---
  
- 
-
 Training large language models isn’t just a question of can you do it—it’s a question of how smartly you do it. If you've ever wondered how researchers train those massive AI models with billions of parameters, it all starts with smart planning. Behind every successful LLM training run is a well-thought-out estimate of memory usage and compute resources.
 
 In this guide, we’ll break down the key factors that influence GPU selection, memory allocation, and the complex relationship between them—empowering you to make smarter decisions when scaling LLMs for efficient, high-quality training..
@@ -54,3 +52,35 @@ In a mixed precision setting, different components of the training process are s
 > 1B × 2 bytes = 2 GB 
 
 
+#### 3. Optimizer States (Adam)
+- Adam optimizer maintains **three additional states** per parameter:
+  - *Momentum Term*
+  - *Variance Term*
+  - *Gradients*
+- Each of these are stored in **FP32 (4 bytes)** for numerical stability.
+- So, each parameter requires 12 bytes 
+> 1B × 12 bytes = 12 GB  
+
+#### 4. Activations
+- Depends on the batch size and context length. 
+
+
+---
+
+### Total Memory (Model Parameters Only)
+
+| Component         | Precision | Size per Param | Total (1B params) |
+|------------------|-----------|----------------|-------------------|
+| Weights          | FP16      | 2 bytes        | 2 GB              |
+| Gradients        | FP16      | 2 bytes        | 2 GB              |
+| Optimizer States | FP32      | 12 bytes        | 12 GB              |
+| **Total**        | —         | —              | **16 GB**         |
+
+This **16 GB** is the **base memory** required per model replica—not including activations or temporary memory used during forward/backward passes. In practice, you'll need additional memory headroom for:
+
+- Activation storage
+- CUDA workspace
+- Data loading overhead
+- Checkpointing buffers 
+
+> Total memory required ≈ 16× the number of model parameters
