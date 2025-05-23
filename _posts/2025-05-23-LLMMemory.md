@@ -129,6 +129,7 @@ Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion toke
 ### Conclusion
 
 In this post, we covered how to estimate memory and GPU requirements for training large language models, illustrated with a practical example using the LLaMA 3–8B model and the NeMo framework. For a deeper understanding, please refer to this [blog on transformer math](https://blog.eleuther.ai/transformer-math/) and this [research paper](https://arxiv.org/pdf/2001.08361).
+
 ---
 
 Thanks for reading! If you enjoyed this, follow me for more and connect on [LinkedIn](https://www.linkedin.com/in/sdhankhar92/).  
