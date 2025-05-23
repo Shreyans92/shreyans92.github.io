@@ -102,23 +102,7 @@ For transformer-based LLMs, a good approximation for **total FLOPs required for 
 The factor **6** (2 for forward pass and 4 for backward pass) comes from transformer-specific operation profiles (matmuls, layernorms, attention, etc.) 
 
 > For more information on the factor of 6, refer to the Appendix B [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311)  
-<!-- 
-Lets take an example of llama3-8B parameter model to estimate the number of GPUs required to pre-train it on 5 Trillion tokens using NeMo framework on H-100 GPUs.
-
-Amount of Compute =  6 × 8 billion × 5 trillion = 2.4 × 10¹¹ TFLOPs 
-
-For NeMo model TFLOP/sec/GPU for llama3-8B for pre-training is 822. 
-> You can check NeMo performance summary [here](https://docs.nvidia.com/nemo-framework/user-guide/latest/performance/archive/25.02_performance_summary.html#:~:text=14201-,822,-LLAMA3%2D70B) 
-
-Calculate GPU seconds = (2.4 × 10¹¹) / (822) = 2.92 × 10⁸ seconds 
-
-Convert it into days = 3,379 days. 
-
-so with 100 H-100 it will take around 41 days(assuming 20% overhead)
-
-
---- -->
-
+--- 
 ###  Example: LLaMA 3 – 8B Model
 
 Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion tokens** using the **NeMo framework** on **NVIDIA H100 GPUs**:
