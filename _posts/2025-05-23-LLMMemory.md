@@ -22,7 +22,7 @@ In this guide, we’ll break down the key factors that influence GPU selection, 
 
 > Note: This blog assumes that readers have a basic understanding of deep learning concepts such as model parameters, gradients, backpropagation etc.
 
-## Step 1: Estimating Memory Requirements :
+### Step 1: Estimating Memory Requirements :
 
 To begin our planning, let’s assume we’re training a transformer-based language model with 8 billion parameters. Before we consider how many GPUs we’ll need—or how many tokens we want to process—we first need to understand the core memory requirements for training the model in a mixed precision setting.
 
@@ -127,6 +127,9 @@ Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion toke
 - **Estimated training time with 100 H100 GPUs**, assuming 20% overhead is 41 days.
 
 ---
+### Conclusion
+
+In this post, we covered how to estimate memory and GPU requirements for training large language models, illustrated with a practical example using the LLaMA 3–8B model and the NeMo framework. For a deeper understanding, please refer to this [blog on transformer math](https://blog.eleuther.ai/transformer-math/) and this [research paper](https://arxiv.org/pdf/2001.08361).
 
 Thank you for taking the time to read my writing. If you enjoyed this content, I invite you to follow me for future updates. Additionally, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/sdhankhar92/).
 
