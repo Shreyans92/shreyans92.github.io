@@ -101,8 +101,10 @@ For transformer-based LLMs, a good approximation for **total FLOPs required for 
 
 The factor **6** (2 for forward pass and 4 for backward pass) comes from transformer-specific operation profiles (matmuls, layernorms, attention, etc.) 
 
-> For more information on the factor of 6, refer to the Appendix B [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311)  
---- 
+> For more information on the factor of 6, refer to the Appendix B [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311)
+
+
+---
 ###  Example: LLaMA 3 – 8B Model
 
 Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion tokens** using the **NeMo framework** on **NVIDIA H100 GPUs**:
