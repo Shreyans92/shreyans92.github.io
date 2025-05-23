@@ -126,8 +126,8 @@ Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion toke
 
 - **Estimated training time with 100 H100 GPUs**, assuming 20% overhead is 41 days.
 
-### Conclusion
 
+### Conclusion
 In this post, we covered how to estimate memory and GPU requirements for training large language models, illustrated with a practical example using the LLaMA 3–8B model and the NeMo framework. For a deeper understanding, please refer to this [blog on transformer math](https://blog.eleuther.ai/transformer-math/) and this [research paper](https://arxiv.org/pdf/2001.08361).
 
 ---
