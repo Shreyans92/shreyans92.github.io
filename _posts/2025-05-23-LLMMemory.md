@@ -7,7 +7,7 @@ image: '/img/llm_training.png'
 share-img: '/img/llm_training.png'
 published: true
 author: Shreyans Dhankhar
-date: 2025-05-06
+date: 2025-05-23
 tags:
   - LLMTraining
   - Memory estimation
@@ -15,7 +15,7 @@ tags:
   - Generative AI
   - Model Scaling
 ---
- 
+
 Training large language models isn’t just a question of can you do it—it’s a question of how smartly you do it. If you've ever wondered how researchers train those massive AI models with billions of parameters, it all starts with smart planning. Behind every successful LLM training run is a well-thought-out estimate of memory usage and compute resources.
 
 In this guide, we’ll break down the key factors that influence GPU selection, memory allocation, and the complex relationship between them—empowering you to make smarter decisions when scaling LLMs for efficient, high-quality training..
@@ -24,7 +24,7 @@ In this guide, we’ll break down the key factors that influence GPU selection, 
 
 ## Step 1: Estimating Memory Requirements :
 
-To begin our planning, let’s assume we’re training a transformer-based language model with 1 billion parameters. Before we consider how many GPUs we’ll need—or how many tokens we want to process—we first need to understand the core memory requirements for training the model in a mixed precision setting.
+To begin our planning, let’s assume we’re training a transformer-based language model with 8 billion parameters. Before we consider how many GPUs we’ll need—or how many tokens we want to process—we first need to understand the core memory requirements for training the model in a mixed precision setting.
 
 Mixed precision training, which typically uses FP16 for storage and FP32 for some operations, significantly reduces memory usage while maintaining training stability. This is especially important when scaling to large models.
 
@@ -84,3 +84,67 @@ This **16 GB** is the **base memory** required per model replica—not including
 - Checkpointing buffers 
 
 > Total memory required ≈ 16× the number of model parameters
+
+
+### Estimating the Number of GPUs Required for Training
+
+So far, we've looked at memory requirements for training large language models. But to fully estimate the number of GPUs needed — especially when optimizing for training time — we must consider compute requirements, specifically FLOPs (Floating Point Operations).
+
+#### Why FLOPs Matter
+
+Every forward and backward pass through a transformer model performs billions (or trillions) of operations. These computations dominate training time — so estimating total FLOPs tells us **how much raw GPU power** we’ll need to meet a training deadline.
+
+#### FLOPs Estimation Formula
+
+For transformer-based LLMs, a good approximation for **total FLOPs required for training** is:
+> Amount of Compute(FLOPS) for one epoch = 6 × Model Parameters × Total Tokens
+
+The factor **6** (2 for forward pass and 4 for backward pass) comes from transformer-specific operation profiles (matmuls, layernorms, attention, etc.) 
+
+> For more information on the factor of 6, refer to the Appendix B [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/pdf/2204.02311)  
+<!-- 
+Lets take an example of llama3-8B parameter model to estimate the number of GPUs required to pre-train it on 5 Trillion tokens using NeMo framework on H-100 GPUs.
+
+Amount of Compute =  6 × 8 billion × 5 trillion = 2.4 × 10¹¹ TFLOPs 
+
+For NeMo model TFLOP/sec/GPU for llama3-8B for pre-training is 822. 
+> You can check NeMo performance summary [here](https://docs.nvidia.com/nemo-framework/user-guide/latest/performance/archive/25.02_performance_summary.html#:~:text=14201-,822,-LLAMA3%2D70B) 
+
+Calculate GPU seconds = (2.4 × 10¹¹) / (822) = 2.92 × 10⁸ seconds 
+
+Convert it into days = 3,379 days. 
+
+so with 100 H-100 it will take around 41 days(assuming 20% overhead)
+
+
+--- -->
+
+###  Example: LLaMA 3 – 8B Model
+
+Let's apply this to the **LLaMA 3–8B** model pre-training on **5 trillion tokens** using the **NeMo framework** on **NVIDIA H100 GPUs**:
+
+- **Compute required**:
+
+  Amount of Compute =  6 × 8 billion × 5 trillion = 2.4 × 10¹¹ TFLOPs  
+
+- **NeMo TFLOPs/sec per GPU** for LLaMA 3–8B pre-training is approximately **822 TFLOPs/sec**.  
+  > See the NeMo performance summary [here](https://docs.nvidia.com/nemo-framework/user-guide/latest/performance/archive/25.02_performance_summary.html#:~:text=14201-,822,-LLAMA3%2D70B).
+
+- **Total GPU seconds required**:
+
+  Calculate GPU seconds = (2.4 × 10¹¹) / (822) = 2.92 × 10⁸ seconds 
+
+- **Convert GPU seconds to days**:
+
+  Days = (2.92 × 10⁸ seconds)/(24 × 60 × 60) = 3,379 days.
+
+- **Estimated training time with 100 H100 GPUs**, assuming 20% overhead is 41 days.
+
+---
+
+Thank you for taking the time to read my writing. If you enjoyed this content, I invite you to follow me for future updates. Additionally, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/sdhankhar92/).
+
+
+Cheers, 
+
+Shreyans 
